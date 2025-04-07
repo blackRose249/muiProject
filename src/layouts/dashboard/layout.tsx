@@ -22,6 +22,7 @@ import { HeaderSection } from '../core/header-section';
 import { LayoutSection } from '../core/layout-section';
 import { AccountPopover } from '../components/account-popover';
 import { LanguagePopover } from '../components/language-popover';
+import { WorkspacesPopover } from '../components/workspaces-popover';
 import { NotificationsPopover } from '../components/notifications-popover';
 
 import type { MainSectionProps } from '../core/main-section';
@@ -65,14 +66,15 @@ export function DashboardLayout({
         </Alert>
       ),
       leftArea: (
-        <>
+        <Box sx={{ display: 'flex', alignItems: 'left', gap: { xs: 0, sm: 0.75 } }}>
           {/** @slot Nav mobile */}
           <MenuButton
             onClick={onOpen}
             sx={{ mr: 1, ml: -1, [theme.breakpoints.up(layoutQuery)]: { display: 'none' } }}
           />
           <NavMobile data={navData} open={open} onClose={onClose} workspaces={_workspaces} />
-        </>
+          <WorkspacesPopover data={_workspaces} sx={{ my: 2 }} />
+        </Box>
       ),
       rightArea: (
         <Box sx={{ display: 'flex', alignItems: 'center', gap: { xs: 0, sm: 0.75 } }}>
