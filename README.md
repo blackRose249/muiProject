@@ -1,10 +1,7 @@
-## Minimal UI ([Free version](https://free.minimals.cc/))
-
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
-
-![preview](public/assets/images/minimal-free-preview.jpg)
-
-> Free React Admin Dashboard made with Material-UI components and React + Vite.js.
+## 進捗
+|内容|画像|
+| :-------------------------- | :------------------------------------------------------------------------------------------------------ |
+|1.プルダウンの変更<br>2.スライドコンポーネント追加|![屏幕截图 2025-04-08 084038](https://github.com/user-attachments/assets/a01f3904-e1a6-4746-a9c5-08633baf7e08)|
 
 ## Pages
 
